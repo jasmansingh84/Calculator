@@ -3,6 +3,8 @@ from Calculator import Calculator
 
 
 class MyTestCase(unittest.TestCase):
+    def setUp(self) -> None:
+        self.calculator = Calculator()
 
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)

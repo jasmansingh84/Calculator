@@ -1,4 +1,4 @@
-from math import *
+import math
 
 def add(x, y):
     z = x + y
@@ -22,7 +22,7 @@ def square(x):
     return z
 
 def sqrt(x):
-    math.sqrt(x)
+    z= math.sqrt(x)
     return z
 
 class Calculator:

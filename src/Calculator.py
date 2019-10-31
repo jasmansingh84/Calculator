@@ -51,6 +51,10 @@ class Calculator:
 
     def square(self, x):
         self.result = square(x)
+        return self.result
 
     def sqrt(self, x):
         self.result = math.sqrt(x)
+        return self.result
+
+

@@ -20,8 +20,11 @@ def Multiply(x, y):
     z = x * y
     return z
 
-def divide(x, y):
-    z = x/y
+def Divide(x, y):
+    x = int(x)
+    y = int(y)
+    z = y / x
+    z = round(z, 9)
     return z
 
 def square(x):
@@ -52,8 +55,8 @@ class Calculator:
         self.result = Multiply(x, y)
         return self.result
 
-    def divide(self, x, y):
-        self.result = divide(x, y)
+    def Divide(self, x, y):
+        self.result = Divide(x, y)
         return self.result
 
     def square(self, x):

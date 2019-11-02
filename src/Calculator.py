@@ -1,9 +1,12 @@
 import math
 import csv
 
-def add(x, y):
+def Add(x, y):
+    a = int(x)
+    b = int(y)
     z = x + y
     return z
+
 
 
 def subtract(x, y):
@@ -33,8 +36,8 @@ class Calculator:
     def __init__(self):
         pass
 
-    def add(self, x, y):
-        self.result = add(x, y)
+    def Add(self, x, y):
+        self.result = Add(x, y)
         return self.result
 
 

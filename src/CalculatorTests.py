@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.Add(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
-    def test_subtract(self):
+    def test_subtraction(self):
         test_data = CsvReader('/src/subtraction_test.csv').data
         pprint(test_data)
         for row in test_data:

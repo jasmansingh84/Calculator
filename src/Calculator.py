@@ -2,16 +2,17 @@ import math
 import csv
 
 def Add(x, y):
-    a = int(x)
-    b = int(y)
+    x = int(x)
+    y = int(y)
     z = x + y
     return z
 
 
-
-def subtract(x, y):
-    z = x - y
-    return z
+def Subtract(x, y):
+    a = int(x)
+    b = int(y)
+    c = b - a
+    return c
 
 def multiply(x, y):
     z = x*y

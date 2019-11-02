@@ -33,21 +33,19 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.Multiply(row['Value 1'], row['Value 2']), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
-
-    def test_divide(self):
+    def test_division(self):
         test_data = CsvReader('/src/division_test.csv').data
         pprint(test_data)
         for row in test_data:
             self.assertEqual(self.calculator.Divide(row['Value 1'], row['Value 2']), float(row['Result']))
             self.assertEqual(self.calculator.result, float(row['Result']))
 
-
-def test_square(self):
-    test_data = CsvReader('/src/square_test.csv').data
-    pprint(test_data)
-    for row in test_data:
-        self.assertEqual(self.calculator.Square(row['Value 1']), int(row['Result']))
-        self.assertEqual(self.calculator.result, int(row['Result']))
+    def test_Square(self):
+        test_data = CsvReader('/src/square_test.csv').data
+        pprint(test_data)
+        for row in test_data:
+            self.assertEqual(self.calculator.Square(row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_sqrt(self):
         test_data = CsvReader('/src/square-root_test.csv').data

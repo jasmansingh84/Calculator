@@ -9,10 +9,10 @@ def Add(x, y):
 
 
 def Subtract(x, y):
-    a = int(x)
-    b = int(y)
-    c = b - a
-    return c
+    x = int(x)
+    y = int(y)
+    z = y - x
+    return z
 
 def multiply(x, y):
     z = x*y
@@ -42,8 +42,8 @@ class Calculator:
         return self.result
 
 
-    def subtract(self, x, y):
-        self.result = subtract(x, y)
+    def Subtract(self, x, y):
+        self.result = Subtract(x, y)
         return self.result
 
     def multiply(self, x, y):

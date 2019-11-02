@@ -27,9 +27,11 @@ def Divide(x, y):
     z = round(z, 9)
     return z
 
-def square(x):
-    z = x * x
+def Square(x):
+    x = int(x)
+    z = x ** 2
     return z
+
 
 def sqrt(x):
     z= math.sqrt(x)
@@ -59,8 +61,8 @@ class Calculator:
         self.result = Divide(x, y)
         return self.result
 
-    def square(self, x):
-        self.result = square(x)
+    def Square(self, x):
+        self.result = Square(x)
         return self.result
 
     def sqrt(self, x):

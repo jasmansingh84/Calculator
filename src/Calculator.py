@@ -14,8 +14,10 @@ def Subtract(x, y):
     z = y - x
     return z
 
-def multiply(x, y):
-    z = x*y
+def Multiply(x, y):
+    x = int(x)
+    y = int(y)
+    z = x * y
     return z
 
 def divide(x, y):
@@ -46,8 +48,8 @@ class Calculator:
         self.result = Subtract(x, y)
         return self.result
 
-    def multiply(self, x, y):
-        self.result = multiply(x, y)
+    def Multiply(self, x, y):
+        self.result = Multiply(x, y)
         return self.result
 
     def divide(self, x, y):

@@ -33,8 +33,14 @@ def Square(x):
     return z
 
 
-def sqrt(x):
-    z= math.sqrt(x)
+def Square_root(x):
+    x = int(x)
+    z = x ** 0.5
+    if z > 10:
+        z = round(z, 8)
+    else:
+        z = round(z, 9)
+
     return z
 
 class Calculator:
@@ -65,8 +71,8 @@ class Calculator:
         self.result = Square(x)
         return self.result
 
-    def sqrt(self, x):
-        self.result = math.sqrt(x)
+    def Square_root(self, x):
+        self.result = Square_root(x)
         return self.result
 
 
